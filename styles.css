@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.wrapper {
+    padding: 32px;
+    width: 100%;
+    max-width: 425px;
+    background: rgb(197, 195, 185);
+    border-radius: 25px;
+    transition: 0.2s;
+}
+
+h2 {
+    margin-bottom: 32px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.rpsgame {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.rpsgame img {
+    padding: 8px;
+    width: 100%;
+    height: auto;
+    background: rgb(253, 202, 202);;
+    border-radius: 8px;
+    box-shadow: 20px rgba(73, 73, 73, 0.2);
+    transition: 0.15s;
+}
+
+.rpsgame img:hover {
+    background: rgb(241, 136, 145);
+    box-shadow: 40px rgba(0, 0, 0, 0.4);
+}
+
+.rpsgame img:active {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.wrapper p {
+    text-align: center;
+    margin-top: 20px;
+    padding: 12px 0px;
+    border-radius: 20px;
+    font-family: 'Merriweather', serif;
+    transition: 0.2s;
+}
+
+#score {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#score .wins {
+    display: inline-block;
+    padding: 12px 20px;
+    font-family: 'Merriweather', serif;
+    background: #EEE;
+    border-radius: 20px;
+}
+
+.win {
+    background: rgb(0, 255, 76);
+}
+
+.lose {
+    background: #ff2e2e;
+}
+
+.tie {
+    background: rgb(82, 143, 255);
+}
+
+.restart {
+    align-items: center;
+    border-radius: 20px;
+}
+
+.restart button {
+    align-items: center;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    cursor: pointer;
+    display: block;
+    width: min(35%,110px);
+    margin-top: 20px;
+    margin-left: 33%;
+    padding: 1.1em;
+    color: rgb(22, 22, 22);
+    background: #4f9dd1;
+    border-radius: 25px;
+    font-size: 1rem;
+    line-height: 0;
+    transition: 0.5s;
+}

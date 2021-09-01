@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Vintage</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Rock, Paper &amp; Scissors</h2>
+        <div class="rpsgame">
+            <img src="./images/rock.png" title="Rock" onclick="game('rock')">
+            <img src="./images/paper.png" title="Paper" onclick="game('paper')">
+            <img src="./images/scissors.png" title="Scissors" onclick="game('scissors')">
+        </div>
+        <p id="result">Choose your move</p>
+        <div id="score">
+            <span class="wins">User Score: 0</span>
+            <span class="wins">Computer Score: 0</span>
+        </div>
+        <div class="restart">
+            <button onclick="location.reload()">New Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--
+    link for images: 
+        Rock : https://d30y9cdsu7xlg0.cloudfront.net/png/34372-200.png
+        Paper : https://d30y9cdsu7xlg0.cloudfront.net/png/1476-200.png
+        Scissors : https://d30y9cdsu7xlg0.cloudfront.net/png/9049-200.png
+-->
+
+<!-- input.addEventListener("keypress",function(event){
+    if((event.keyCode == 13 || event.which == 13) && input.value != ""){
+        html = '<div class="task">'+input.value+'<i class="fas fa-trash-alt"></i><i class="fas fa-check tick"></i></div>';
+        notcompleted.insertAdjacentHTML("beforeend",html);
+        input.value = "";
+    }
+}); -->
