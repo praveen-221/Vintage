@@ -99,11 +99,10 @@ h2 {
 }
 
 .restart button {
-    align-items: center;
     text-align: center;
     font-family: 'Lobster Two', cursive;
     cursor: pointer;
-    display: block;
+    display: inline-block;
     width: min(35%,110px);
     margin-top: 20px;
     margin-left: 33%;

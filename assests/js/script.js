@@ -1,6 +1,6 @@
 let userscore = 0;
 let computerscore = 0;
-let ref;
+let ref, news;
 const res = document.querySelector("#result");
 const score = document.querySelector("#score");
 
@@ -40,6 +40,31 @@ function game (move) {
     }
 
     score.innerHTML = `<span class = "wins">User Score: ${userscore}</span><span class="wins">Computer Score: ${computerscore}</span>`;
+
+    if (userscore > computerscore) {
+        news = "You";
+    }
+    else if (computerscore > userscore) {
+        news = "Computer";
+    }
+    else {
+        news = "tie";
+    }
+}
+
+function finish () {
+    if (news == "You") {
+        alert(news + " win :) \nWe need Practice to beat you...");
+        location.reload();
+    }
+    else if (news == "Computer") {
+        alert(news + " wins.. \nBetter Luck Next Time...");
+        location.reload();
+    }
+    else if (news == "tie") {
+        alert("It's a " + news + "\nLike to give another try ?");
+        location.reload();
+    }
 }
 
 function compare (choice1, choice2) {
